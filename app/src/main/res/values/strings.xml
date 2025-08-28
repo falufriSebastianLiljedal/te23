@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Te23s superduperapp</string>
+    <string name="btn_account">Account</string>
+    <string name="btn_home">Home</string>
+    <string name="btn_exit">Exit</string>
+    <string name="txt_ass">Assistant</string>
+    <string name="txt_banana">Bananchoklad</string>
+    <string name="imgdes_superniceimage">Supernice image</string>
+</resources>
