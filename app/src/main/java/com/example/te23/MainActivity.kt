@@ -1,7 +1,9 @@
 package com.example.te23
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +27,15 @@ class MainActivity : AppCompatActivity() {
             ClickOnHome(button)
         }
 
+        val accountButton: Button = findViewById<Button>(R.id.btn_account)
+        accountButton.setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java)
+            val textBox: EditText = findViewById<EditText>(R.id.editTextText)
+            val username = textBox.text.toString()
+
+            intent.putExtra("username", username)
+            startActivity(intent)
+        }
     }
 
     fun ClickOnHome(button : Button){
