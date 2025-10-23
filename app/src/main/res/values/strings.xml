@@ -6,4 +6,7 @@
     <string name="txt_ass">Assistant</string>
     <string name="txt_banana">Bananchoklad</string>
     <string name="imgdes_superniceimage">Supernice image</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello best fragment</string>
+    <string name="hello_worst_fragment">Hello worst fragment</string>
 </resources>

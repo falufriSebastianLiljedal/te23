@@ -24,7 +24,12 @@ class MainActivity : AppCompatActivity() {
 
         var button : Button = findViewById<Button>(R.id.btn_home)
         button.setOnClickListener {
-            ClickOnHome(button)
+            val newFragment = WorstFragmentEver()
+
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainerView, newFragment)
+                .addToBackStack(null)
+                .commit()
         }
 
         val accountButton: Button = findViewById<Button>(R.id.btn_account)
@@ -38,7 +43,5 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun ClickOnHome(button : Button){
-        button.text = "I'm so clicked"
-    }
+
 }
